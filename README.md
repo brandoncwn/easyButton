@@ -104,15 +104,20 @@ insert guidance and image here to fork
   
   for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
-### 4. Navigate to easyButton/templates
-### 5. Go to templates.json
-### 6. Update parameters within templates.json
+### 4. Navigate to and open for editing, easyButton/templates/templates.json
 Update the three "value" fields:
 ![](images/edit_parameters1)
   i.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
   ii. repository token: copy the personal access token you recently created
   iii. repository url: paste the link of your forked repository
 ![](images/edit_parameters3)
+  iii. committ your updates
+
+### 5. Create action to deploy
+  i. Navigate to actions tab
+  ii. Select create new workflow
+  iii. Select set up workflow yourself
+  iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file
 
 
 
