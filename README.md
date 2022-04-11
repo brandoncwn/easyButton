@@ -94,12 +94,17 @@ insert guidance and image here to fork
   ii.  Select Settings  
   iii. Select Developer settings at bottom of left navigation pane  
   iv.  Select Personal access tokens  
+  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
   v.   Select Generate personal access token  
-  vi.  Under Select scopes, select the checkbox for workflow  
+  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)
+  vi.  Under Select scopes, select the checkbox for "workflow"
+  ![](iamges/personal_access_tokens_configuration.png_
   vii. Add your own description  
   viii. Select Generate token  
   ix.  Copy your newly generated token  
   **Note**: *be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
+  
+  for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
 ### 5. Navigate to your 
 
