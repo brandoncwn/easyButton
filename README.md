@@ -86,10 +86,8 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account
 insert guidance and image here to fork
 
 **Note**: *a Microsoft organization github account is **not** required*  
-### 3. Navigate to easyButton/templates
-### 4. Go to templates.json
 
-### 4. Create AND save personal access token
+### 3. Create AND save personal access token
   i.   On your github repo page, click your profile  
   ii.  Select Settings  
   iii. Select Developer settings at bottom of left navigation pane  
@@ -106,7 +104,16 @@ insert guidance and image here to fork
   
   for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
-### 5. Navigate to your 
+### 4. Navigate to easyButton/templates
+### 5. Go to templates.json
+### 6. Update parameters within templates.json
+Update the three "value" fields:
+![](images/edit_parameters1)
+  i.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
+  ii. repository token: copy the personal access token you recently created
+  iii. repository url: paste the link of your forked repository
+![](images/edit_parameters3)
+
 
 
 
