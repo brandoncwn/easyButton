@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "projectName": {
-            "value": ""
+            "value": "brandonproject345"
           },
           "repositoryToken": {
-            "value": ""
+            "value": "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"
           },
           "repositoryUrl": {
-            "value": ""
+            "value": "https://github.com/brandoncwn/easyButton"
           }
     }
 }
