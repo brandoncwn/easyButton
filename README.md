@@ -72,7 +72,25 @@ Custom
 https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-model-overview
 #### Language Service Models
 
+| Model | Description |
+| ----- | ----------- |
+|Named Entity Recognition (NER)|	This pre-configured feature identifies entities in text across several pre-defined categories.|
+|Personally Identifiable Information (PII) detection	|This pre-configured feature identifies entities in text across several pre-defined categories of sensitive |information, such as account information.|
+|Key phrase extraction|	This pre-configured feature evaluates unstructured text, and for each input document, returns a list of key phrases and main points in the text.|
+|Entity linking	|This pre-configured feature disambiguates the identity of an entity found in text and provides links to the entity on Wikipedia.|
+|Text Analytics for health|	This pre-configured feature extracts information from unstructured medical texts, such as clinical notes and doctor's notes.|
+|Custom NER|	Build an AI model to extract custom entity categories, using unstructured text that you provide.|
+|Analyze sentiment and opinions|	This pre-configured feature provides sentiment labels (such as "negative", "neutral" and "positive") for sentences and documents. This feature can additionally provide granular information about the opinions related to words that appear in the text, such as the attributes of products or services.|
+|Language detection	|This pre-configured feature evaluates text, and determines the language it was written in. It returns a language identifier and a score that indicates the strength of the analysis.|
+|Custom text classification (preview)	|Build an AI model to classify unstructured text into custom classes that you define.|
+|Text Summarization (preview)	|This pre-configured feature extracts key sentences that collectively convey the essence of a document.|
+|Question answering|	This pre-configured feature provides answers to questions extracted from text input, using semi-structured content such as: FAQs, manuals, and documents.|
+
+https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview
+
+
 #### Hugging Face Implementation
+TBD
 
 ## Prerequisities
 1. Github account
