@@ -32,13 +32,13 @@
 - [References](#references)  
 ---
 
-![](https://github.com/jameshoff-msft/bpa-backend/blob/master/images/web_app_ui3.png)
+![](images/web_app_ui3.png)
 
 
 ## Architecture
 Once you've created a high-level Resource Group, you'll create a high-level Azure DevOps pipeline and import/clone this repo, automatically importing helper libraries and taking advantage of Azure functions to deploy the set of Azure Cognitive Services and manage all of the new Azure module credentials, in the background, within your newly created pipeline. Once the pipeline is deployed, a static webapp will be created with your newly customizable POC UI for document processing!
 
-![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/sample_architecture3.jpg)
+![](images/sample_architecture3.jpg)
 
 ## Currently Included Algorithms
 The initial release includes two top NLP use cases, text classification, and custom named entity recognition. Additional tasks and models are on the roadmap for inclusion (see Roadmap section later in this document).
@@ -82,7 +82,7 @@ Select your preferred Region
 ####    2. Create a new Project
 Type in your Project name. And Select a Visibility setting (currently tested with Private)
 
-![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/create_project2.png)
+![](images/create_project2.png)
 
 ####     3. Select Repos in left Navigation pane
 ####     4. Select Import a Repository 
@@ -91,15 +91,15 @@ Select Git for Repository type. Paste the quick start repo https://github.com/ja
 **Note**: *You may leave Requires Authentication unchecked*  
  Cloning may take several minutes. 
  
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/clone_repository_status.png)
+ ![](images/clone_repository_status.png)
  
  Your cloned repository should mirror the below directory:
  
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/cloned_repository.png)
+ ![](images/cloned_repository.png)
  
 ####    5. Navigate to Project Settings
 
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/project_settings2.png)  
+ ![](images/project_settings2.png)  
  
  
 ####     6. Create Service Connection
@@ -116,7 +116,7 @@ Select Next.
     **Note** :*Recommended all lower case alphanumeric only*  
     d. check the box for Grant access permission to all pipelines  
     
-    ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/access_permission.png)  
+    ![](images/access_permission.png)  
     
 5. Input the same Resource group and Service connection name 
 6. Select the checkbox for "Grant access permission to all pipelines  
@@ -163,18 +163,18 @@ We'll only need to update lines 12-17, with the following instructions instructi
 ## 4. Save and Run!
 Insert any commit message. You should see the pipeline stages workflow updating. Pipeline deployment will generally take several minutes. Monitor the status of your runs: 
 
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/model_pipeline_run_part1.png)
+ ![](model_pipeline_run_part1.png)
  
  You can drill into each stage for a more detailed log.
  
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/model_pipeline_run_part1_detailed_log.png)
+ ![](images/model_pipeline_run_part1_detailed_log.png)
  
  ## 5. Launch App
 1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>
 2. Select your static webapp
 3. Within the default Overview pane, Select your URL to navigate to the WebApp, this take you to the newly launched WebApp!
  
- ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/find_static_web_app2.png)
+ ![](images/find_static_web_app2.png)
  
  ## 6. Load Documents!
 Use the Select PDF File to load your documents  
@@ -182,7 +182,7 @@ Use the Select PDF File to load your documents
 
 Check for you newly found custom entities!
  
-  ![](https://github.com/brandoncwn/staticwebappstarter/blob/main/images/web_app_ui2.png)  
+  ![](images/web_app_ui2.png)  
   
 You can further customize your UI via the front end repo https://github.com/<your github account>/bpa-engine-frontend. Simple instructions on how to quickly do so are coming soon
 
