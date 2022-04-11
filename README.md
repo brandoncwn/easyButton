@@ -45,20 +45,27 @@ Once you've created a high-level Resource Group, you'll create a high-level Azur
 ![](images/sample_architecture3.png)
 
 ## Currently Included Algorithms
-The initial release includes two top NLP use cases, text classification, and custom named entity recognition. Additional tasks and models are on the roadmap for inclusion (see Roadmap section later in this document).
-#### Text Classification
-Text classification is a supervised learning method of learning and predicting the category or the class of a document given its text content. The state-of-the-art methods are based on neural networks of different architectures as well as pre-trained language models or word embeddings.
-#### Custom Named Entity Recognition
-Named Entity Recognition (NER) is the task of detecting and classifying real-world objects mentioned in text. Common named entities include person names, locations, organizations, etc. The state-of-the art NER methods include combining Long Short-Term Memory neural network with Conditional Random Field (LSTM-CRF) and pretrained language models like BERT.
+The initial release includes Cognitive Services provided by Azure Language Service and Form Recognizer, such as text classification and custom named entity recognition, as well as standardized interface for deploying State-of-the-Art Hugging Face models. Additional tasks and models are on the roadmap for inclusion (see Roadmap section later in this document).
+#### Form Recognizer Models  
+| Model | Description |
+|Read (preview)	| Extract printed and handwritten text lines, words, locations, and detected languages. |
+| General document (preview) |	Extract text, tables, structure, key-value pairs, and named entities.|
+| Layout |	Extract text and layout information from documents.|
+| Prebuilt | |
+| Model | Description |
+| W-2 (preview)	Extract employee, employer, wage information, etc. from US W-2 forms.|
+|Invoice	Extract key information from English and Spanish invoices.|
+|Receipt	Extract key information from English receipts.|
+|ID document	| Extract key information from US driver licenses and international passports.|
+|Business card	Extract key information from English business cards.|
+|Custom	| |
+| Custom |	Extract data from forms and documents specific to your business. Custom models are trained for your distinct data and use cases. |
+| Composed |	Compose a collection of custom models and assign them to a single model built from your form types.|
 
-NER usually involves assigning an entity label to each word in a sentence, such as the entities shown below:
+https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-model-overview
+#### Language Service Models
 
-O: Not an entity (i.e. All other words)  
-I-LOC: Location  
-I-ORG: Organization  
-I-PER: Person  
-
-There are a few standard labeling schemes and you can find the details [here](http://cs229.stanford.edu/proj2005/KrishnanGanapathy-NamedEntityRecognition.pdf). The data can also be labeled with custom entities as required by the use case.
+#### Hugging Face Implementation
 
 ## Prerequisities
 1. Github account
