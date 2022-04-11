@@ -3,7 +3,7 @@
 
 ## Overview
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [React](https://reactjs.org/) apps in minutes. Use this repo with the [React quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=react) to build and customize a new static site and automate the deployment of a functional, and customizable, POC UI for document processing. This guide will present a high-level overview of the deployment architecture, with a step-by-step instructional guide for immediate deployment, without any coding.
+[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [React](https://reactjs.org/) apps in minutes. Use this repo with the [React quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=react) to build and customize a new static site and automate the deployment of a functional, and customizable, POC UI for document processing. This guide will present a high-level overview of the deployment architecture, with a step-by-step instructional guide for immediate deployment, with several simple command line steps.
 
 
 
@@ -69,84 +69,27 @@ To check:
  "You must create your first Face, Language service, or Computer Vision resources from the Azure portal to review and acknowledge the terms and conditions. You can do so here: Face, Language service, Computer Vision. After that, you can create subsequent resources using any deployment tool (SDK, CLI, or ARM template, etc) under the same Azure subscription."
 
 ## Installation Steps
-### 1. Clone the starter backend repo
-Clone https://github.com/jameshoff-msft/bpa-backend to your github account  
-**Note**: *a Microsoft organization github account is **not** required*
-### 2. Create a Resource Group in your Azure Portal
+
+### 1. Create a Resource Group in your Azure Portal
+Create your Resource group.
 Select your preferred Region
-### 3. Setting up Azure DevOps Pipeline
-**Note**: You'll use Azure DevOps for running the multi-stage pipeline with build. If you don't already have an Azure DevOps organization, create one by following the instructions at [Quickstart: Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops).)
+![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-add-group.png)
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
+It will take a few seconds for your Resource Group to be created.
+![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-create-group.png)
+For more help, refer to https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
-####    1. Navigate to Azure DevOps www.dev.azure.com
-####    2. Create a new Project
-Type in your Project name. And Select a Visibility setting (currently tested with Private)
+### 2. Fork the repo
+Fork https://github.com/jameshoff-msft/easyButton to your github account  
 
-![](images/create_project2.png)
+insert guidance and image here to fork
 
-####     3. Select Repos in left Navigation pane
-####     4. Select Import a Repository 
-Select Git for Repository type. Paste the quick start repo https://github.com/jameshoff-msft/bpa-backend into the CLone URL* field. This repo is used for the POC backend, e.g. creating backend Cognitive Service, Azure functions, and managing credentials
+**Note**: *a Microsoft organization github account is **not** required*  
+### 3. Navigate to easyButton/templates
+### 4. Go to templates.json
 
-**Note**: *You may leave Requires Authentication unchecked*  
- Cloning may take several minutes. 
- 
- ![](images/clone_repository_status.png)
- 
- Your cloned repository should mirror the below directory:
- 
- ![](images/cloned_repository.png)
- 
-####    5. Navigate to Project Settings
-
- ![](images/project_settings2.png)  
- 
- 
-####     6. Create Service Connection
-This Service Connection will allow Azure DevOps to manage resources within your newly created Resource Group
-1. Click Service Connections in left navigation pane
-2. Select Create service connection - This authorizes Azure DevOps to manage your Azure resources on your behalf.  
-Select Next.
-3. Select Azure Resource Manager 
-    **Note**: *Service principal option is recommended*
-4. Select your subscription level 
-    a. Subscription level scope is recommended.  
-    b. Select your Subscription.  
-    c. Define Service Connection name (save the Service Connection name for reuse in the subsequent steps    
-    **Note** :*Recommended all lower case alphanumeric only*  
-    d. check the box for Grant access permission to all pipelines  
-    
-    ![](images/access_permission.png)  
-    
-5. Input the same Resource group and Service connection name 
-6. Select the checkbox for "Grant access permission to all pipelines  
-       **Note** *alphanumeric lower case only as multiple azure services and resources are being used with different naming convention restrictions*
-       
-####     7. Define Pipeline
-1. Navigate back to Pipelines in your left Navigation Pane
-2. Select Create Pipeline
-3. Select Azure Repos Git
-4. Select your previously cloned repo
-
-####     8. Clone UI repo
-This repo is used for the POC front end.    
-Fork the below repository to the same Github that was used previously
-https://github.com/jameshoff-msft/bpa-engine-frontend
-
-1. Ensure you are still logged into your github repo
-2. Navigate to the above repo
-3. Select Fork in upper right menu
-4. Select your github account  
-We will use the link (github.com/<my account name>/bpa-engine-frontend) to this newly forked repo in the next steps
-
-####     9. Review your Pipeline YAML
-We'll only need to update lines 12-17, with the following instructions instructions
-1. Azure subscription = service connection previously created
-2. Fill in Project name - must be unique (this name is used across most of the services created during this accelerator)
-3. Fill in resource group name
-4. Select your desired location
-5. Select your previously cloned repo's bpa-engine-frontend URI.
-6. Find your repository token
+### 4. Create AND save personal access token
   i.   On your github repo page, click your profile  
   ii.  Select Settings  
   iii. Select Developer settings at bottom of left navigation pane  
@@ -157,17 +100,12 @@ We'll only need to update lines 12-17, with the following instructions instructi
   viii. Select Generate token  
   ix.  Copy your newly generated token  
   **Note**: *be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
-  v.   Paste your newly generated token in the repositoryToken field  
-  vi.  Under Select scopes, select the checkbox for workflow  
 
-## 4. Save and Run!
-Insert any commit message. You should see the pipeline stages workflow updating. Pipeline deployment will generally take several minutes. Monitor the status of your runs: 
+### 5. Navigate to your 
 
- ![](model_pipeline_run_part1.png)
- 
- You can drill into each stage for a more detailed log.
- 
- ![](images/model_pipeline_run_part1_detailed_log.png)
+
+
+
  
  ## 5. Launch App
 1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>
