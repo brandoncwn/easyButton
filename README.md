@@ -47,20 +47,27 @@ Once you've created a high-level Resource Group, you'll create a high-level Azur
 ## Currently Included Algorithms
 The initial release includes Cognitive Services provided by Azure Language Service and Form Recognizer, such as text classification and custom named entity recognition, as well as standardized interface for deploying State-of-the-Art Hugging Face models. Additional tasks and models are on the roadmap for inclusion (see Roadmap section later in this document).
 #### Form Recognizer Models  
+
 | Model | Description |
+| ----- | ----------- |
 |Read (preview)	| Extract printed and handwritten text lines, words, locations, and detected languages. |
 | General document (preview) |	Extract text, tables, structure, key-value pairs, and named entities.|
-| Layout |	Extract text and layout information from documents.|
-| Prebuilt | |
+| Layout |	Extract text and layout information from documents.|  
+
+ Prebuilt  
 | Model | Description |
-| W-2 (preview)	Extract employee, employer, wage information, etc. from US W-2 forms.|
-|Invoice	Extract key information from English and Spanish invoices.|
-|Receipt	Extract key information from English receipts.|
+| ----- | ----------- |
+| W-2 (preview) |	Extract employee, employer, wage information, etc. from US W-2 forms.|
+|Invoice	| Extract key information from English and Spanish invoices.|
+|Receipt	| Extract key information from English receipts.|
 |ID document	| Extract key information from US driver licenses and international passports.|
-|Business card	Extract key information from English business cards.|
-|Custom	| |
+|Business card	| Extract key information from English business cards.|  
+
+Custom
+| Model | Description |
+| ----- | ----------- |
 | Custom |	Extract data from forms and documents specific to your business. Custom models are trained for your distinct data and use cases. |
-| Composed |	Compose a collection of custom models and assign them to a single model built from your form types.|
+| Composed |	Compose a collection of custom models and assign them to a single model built from your form types.|  
 
 https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-model-overview
 #### Language Service Models
