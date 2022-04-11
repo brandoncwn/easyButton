@@ -104,23 +104,27 @@ insert guidance and image here to fork
   
   for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
-### 4. Navigate to and open for editing, easyButton/templates/templates.json
+### 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
+  i. open a command window
+  ii. clone your repo locally
+  iii. Navigate to
 Update the three "value" fields:
 ![](images/edit_parameters1)
   i.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
   ii. repository token: copy the personal access token you recently created
   iii. repository url: paste the link of your forked repository
 ![](images/edit_parameters3)
-  iii. committ your updates
+  iii. commit your updates
+  **Note**: This may take several minutes
   
 ### 5. clone your repo locally
-### 6. Run initial deployment configuration
+### 6. Run initial deployment configuration  
   i. Open local command line window
   ii. Navigtate to <your local repository>/src/templates
   ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json
-  **Note**: This may take several seconds to run
+  **Note**: This may take several seconds to run  
 
-### 5. Create action to deploy
+### 7. Create action to deploy
   i. Navigate to actions tab
   ii. Select create new workflow
   iii. Select set up workflow yourself
