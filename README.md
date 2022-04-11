@@ -112,6 +112,13 @@ Update the three "value" fields:
   iii. repository url: paste the link of your forked repository
 ![](images/edit_parameters3)
   iii. committ your updates
+  
+### 5. clone your repo locally
+### 6. Run initial deployment configuration
+  i. Open local command line window
+  ii. Navigtate to <your local repository>/src/templates
+  ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json
+  **Note**: This may take several seconds to run
 
 ### 5. Create action to deploy
   i. Navigate to actions tab
