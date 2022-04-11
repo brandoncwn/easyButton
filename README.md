@@ -32,7 +32,7 @@
 - [References](#references)  
 ---
 
-![](images/web_app_ui3.png)
+![](images/select_stage2.png)
 
 
 ## Architecture
