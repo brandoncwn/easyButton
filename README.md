@@ -106,7 +106,7 @@ To check:
 
 ## Installation Steps
 
-### 1. Create a Resource Group in your Azure Portal
+## 1. Create a Resource Group in your Azure Portal
 Create your Resource group.
 Select your preferred Region
 ![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-add-group.png)
@@ -116,14 +116,14 @@ It will take a few seconds for your Resource Group to be created.
 ![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-create-group.png)
 For more help, refer to https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
-### 2. Fork the repo
+## 2. Fork the repo
 Fork https://github.com/jameshoff-msft/easyButton to your github account  
 
 insert guidance and image here to fork
 
 **Note**: *a Microsoft organization github account is **not** required*  
 
-### 3. Create AND save personal access token
+## 3. Create AND save personal access token
   i.   On your github repo page, click your profile  
   ii.  Select Settings  
   iii. Select Developer settings at bottom of left navigation pane  
@@ -140,7 +140,7 @@ insert guidance and image here to fork
   
   for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
-### 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
+## 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
   i. open a command window
   ii. clone your repo locally
   iii. Navigate to
@@ -153,32 +153,28 @@ Update the three "value" fields:
   iii. commit your updates
   **Note**: This may take several minutes
   
-### 5. clone your repo locally
-### 6. Run initial deployment configuration  
+## 5. Clone your repo locally
+## 6. Run initial deployment configuration  
   i. Open local command line window
   ii. Navigtate to <your local repository>/src/templates
   ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json
   **Note**: This may take several seconds to run  
 
-### 7. Create action to deploy
+## 7. Create action to deploy
   i. Navigate to actions tab
   ii. Select create new workflow
   iii. Select set up workflow yourself
   iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file
 
-
-
-
-
  
- ## 5. Launch App
+## 8. Launch App
 1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>
 2. Select your static webapp
 3. Within the default Overview pane, Select your URL to navigate to the WebApp, this take you to the newly launched WebApp!
  
  ![](images/find_static_web_app2.png)
  
- ## 6. Load Documents!
+## 9. Load Documents!
 Use the Select PDF File to load your documents  
   **Note**: *your documents should be in pdf/image format. The first document loaded may take several minutes. However, all subsequent documents should be processed much faster*
 
