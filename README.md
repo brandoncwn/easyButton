@@ -136,13 +136,13 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
 ### iii. Navigate to  
 Update the three "value" fields:  
 
-![](images/edit_parameters1.jpg)  
+![](images/edit_parameters1.png)  
 
 ### iv.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only  
 ### v. repository token: copy the personal access token you recently created  
 ### vi. repository url: paste the link of your forked repository  
   
-![](images/edit_parameters3.jpg)  
+![](images/edit_parameters3.png)  
 
 ### vii. commit your updates  
   **Note**: This may take several minutes  
