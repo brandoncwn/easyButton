@@ -21,7 +21,7 @@ The following guide will present a high-level overview of the deployment archite
   - [Run initial deployment configuration](#run-initial-deployment-configuration)
   - [Create action to deploy](7-create-action-to-deploy)
   - [Launch App](#8-launch-app)
-  - [Load Documents!)(#load-documents)
+  - [Load Documents!](#load-documents)
 - [Contacts](#contacts)  
 - [Roadmap](#roadmap)
 - [References](#references)  
@@ -81,7 +81,9 @@ https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overv
 
 
 #### Hugging Face Implementation
-TBD
+Many of the pretrained models from the huggingface library can be used, depending on the task selected! Find more information [here](#https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads)
+
+![](images/hugging_face_models.png)
 
 ## Prerequisities
 1. Github account
