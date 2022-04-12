@@ -118,11 +118,11 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
   ii.  Select Settings  
   iii. Select Developer settings at bottom of left navigation pane  
   iv.  Select Personal access tokens  
-  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
+  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-personal-access-tokens.jpg)  
   v.   Select Generate personal access token  
-  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)
-  vi.  Under Select scopes, select the checkbox for "workflow"
-  ![](images/personal_access_tokens_configuration.png)
+  ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)  
+  vi.  Under Select scopes, select the checkbox for "workflow"  
+  ![](images/personal_access_tokens_configuration.png)  
   vii. Add your own description  
   viii. Select Generate token  
   ix.  Copy your newly generated token  
