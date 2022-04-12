@@ -114,57 +114,57 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
 **Note**: *a Microsoft organization github account is **not** required*  
 
 ## 3. Create AND save personal access token
-  i.   On your github repo page, click your profile  
-  ii.  Select Settings  
-  iii. Select Developer settings at bottom of left navigation pane  
-  iv.  Select Personal access tokens  
+### i.   On your github repo page, click your profile  
+### ii.  Select Settings  
+### iii. Select Developer settings at bottom of left navigation pane  
+### iv.  Select Personal access tokens  
   ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-personal-access-tokens.jpg)  
-  v.   Select Generate personal access token  
+### v.   Select Generate personal access token  
   ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)  
-  vi.  Under Select scopes, select the checkbox for "workflow"  
+### vi.  Under Select scopes, select the checkbox for "workflow"  
   ![](images/personal_access_tokens_configuration.png)  
-  vii. Add your own description  
-  viii. Select Generate token  
-  ix.  Copy your newly generated token  
+### vii. Add your own description  
+### viii. Select Generate token  
+### ix.  Copy your newly generated token  
   **Note**: *Be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
   
   For further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
 ## 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
-  i. Open a command window
-  ii. Clone your repo locally
-  iii. Navigate to
+### i. Open a command window  
+### ii. Clone your repo locally  
+### iii. Navigate to  
 Update the three "value" fields:  
 
-![](images/edit_parameters1)
+![](images/edit_parameters1)  
 
-  iv.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
-  v. repository token: copy the personal access token you recently created
-  vi. repository url: paste the link of your forked repository  
+### iv.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only  
+### v. repository token: copy the personal access token you recently created  
+### vi. repository url: paste the link of your forked repository  
   
 ![](images/edit_parameters3)  
 
-  vii. commit your updates
-  **Note**: This may take several minutes
+### vii. commit your updates  
+  **Note**: This may take several minutes  
   
-## 5. Clone your repo locally
+## 5. Clone your repo locally  
 ## 6. Run initial deployment configuration  
-  i. Open local command line window
-  ii. Navigtate to <your local repository>/src/templates
-  ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json
-  **Note**: This may take several seconds to run  
+### i. Open local command line window  
+### ii. Navigtate to <your local repository>/src/templates  
+### iiii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json  
+  **Note**: This may take several seconds to run    
 
-## 7. Create action to deploy
-  i. Navigate to actions tab
-  ii. Select create new workflow
-  iii. Select set up workflow yourself
-  iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file
+## 7. Create action to deploy  
+### i. Navigate to actions tab  
+### ii. Select create new workflow  
+### iii. Select set up workflow yourself  
+### iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
 
  
-## 8. Launch App
-1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>
-2. Select your static webapp
-3. Within the default Overview pane, Select your URL to navigate to the WebApp, this take you to the newly launched WebApp!
+## 8. Launch App  
+### 1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>  
+### 2. Select your static webapp  
+### 3. Within the default Overview pane, Select your URL to navigate to the WebApp, this take you to the newly launched WebApp!  
  
  ![](images/find_static_web_app2.png)
  
