@@ -157,8 +157,8 @@ Update the three "value" fields below:
 2. Select create new workflow  
 3. Select set up workflow yourself  
   ![](images/set up workflow.png)
-4. Rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
-
+4. Run the workflow and select commit new file
+  **Note**:*Once you've run your workflow once, you'll want to delete previous workflow runs to prevent buildup of old workflows.
  
 ## 7. Launch App  
 1. Navigate to your Resource Group within your Azure Portal <insert static web app screenshot here>  
