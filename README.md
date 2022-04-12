@@ -16,7 +16,7 @@ The following guide will present a high-level overview of the deployment archite
 - [Currently Inluded Algorithms](#currently-inluded-algorithms)  
 - [Prerequisities](#prerequisities)  
 - [Installation Steps](#installation-steps)  
-  - [Clone starter backend repo](#1-clone-the-starter-backend-repo)  
+  - [Create a Resource Group in your Azure Portal](#1create-a-resource-group-in-your-azure-portal)  
   - [Set Up Resource Group](#2-create-a-resource-group-in-your-azure-portal)  
   - [Set up Azure DevOps Pipeline](#3-setting-up-azure-devops-pipeline)  
     - [Navigate to Azure](#1-navigate-to-azure-devops-wwwdevazurecom)
