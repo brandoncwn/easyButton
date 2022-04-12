@@ -81,7 +81,7 @@ https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overv
 
 
 #### Hugging Face Implementation
-Many of the pretrained models from the huggingface library can be used, depending on the task selected! Find more information [here](#https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads)
+Many of the pretrained models from the huggingface library can be used, depending on the task selected! Find more information at https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads
 
 ![](images/hugging_face_models.png)
 
