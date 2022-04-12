@@ -153,11 +153,11 @@ Update the three "value" fields below:
   **Note**: This may take several seconds to run    
 
 ## 6. Create action to deploy  
-### i. Navigate to actions tab  
-### ii. Select create new workflow  
-### iii. Select set up workflow yourself  
+1. Navigate to actions tab  
+2. Select create new workflow  
+3. Select set up workflow yourself  
   ![](images\set up workflow.png)
-### iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
+4. Rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
 
  
 ## 7. Launch App  
