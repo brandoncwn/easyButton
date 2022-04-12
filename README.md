@@ -126,21 +126,25 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
   vii. Add your own description  
   viii. Select Generate token  
   ix.  Copy your newly generated token  
-  **Note**: *be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
+  **Note**: *Be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
   
-  for further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
+  For further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
 ## 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
-  i. open a command window
-  ii. clone your repo locally
+  i. Open a command window
+  ii. Clone your repo locally
   iii. Navigate to
-Update the three "value" fields:
+Update the three "value" fields:  
+
 ![](images/edit_parameters1)
-  i.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
-  ii. repository token: copy the personal access token you recently created
-  iii. repository url: paste the link of your forked repository
-![](images/edit_parameters3)
-  iii. commit your updates
+
+  iv.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only
+  v. repository token: copy the personal access token you recently created
+  vi. repository url: paste the link of your forked repository  
+  
+![](images/edit_parameters3)  
+
+  vii. commit your updates
   **Note**: This may take several minutes
   
 ## 5. Clone your repo locally
