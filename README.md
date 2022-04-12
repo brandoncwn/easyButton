@@ -114,33 +114,33 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
 **Note**: *a Microsoft organization github account is **not** required*  
 
 ## 3. Create AND save personal access token
-### i.   On your github repo page, click your profile  
-### ii.  Select Settings  
-### iii. Select Developer settings at bottom of left navigation pane  
-### iv.  Select Personal access tokens  
+1.  On your github repo page, click your profile  
+2.  Select Settings  
+3. Select Developer settings at bottom of left navigation pane  
+4.  Select Personal access tokens  
   ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-personal-access-tokens.jpg)  
-### v.   Select Generate personal access token  
+5.   Select Generate personal access token  
   ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)  
-### vi.  Under Select scopes, select the checkbox for "workflow"  
+6..  Under Select scopes, select the checkbox for "workflow"  
   ![](images/personal_access_tokens_configuration.png)  
-### vii. Add your own description  
-### viii. Select Generate token  
-### ix.  Copy your newly generated token  
+7.. Add your own description  
+8. Select Generate token  
+9..  Copy your newly generated token  
   **Note**: *Be sure to save this token for completing pipeline setup, else this token will need to be regenerated*  
   
   For further information refer to https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate
 
 ## 4. Navigate to and open for editing, easyButton/templates/templates.json in your local directory
-### i. Open a command window  
-### ii. Clone your repo locally  
-### iii. Navigate to  
+1. Open a command window  
+2. Clone your repo locally  
+3. Navigate to  
 Update the three "value" fields below:  
 
 ![](images/edit_parameters1.png)  
 
-### iv.  projectName = must be a unique project name, keep to lowercase, alphanumeric characters only  
-### v. repository token: copy the personal access token you recently created  
-### vi. repository url: paste the link of your forked repository  
+4. projectName = must be a unique project name, keep to lowercase, alphanumeric characters only  
+5. repository token: copy the personal access token you recently created  
+6. repository url: paste the link of your forked repository  
   
 ![](images/edit_parameters3.png)  
 
@@ -148,15 +148,15 @@ Update the three "value" fields below:
   **Note**: This may take several minutes  
   
 ## 5. Run initial deployment configuration  
-### i. In your local repository, navigtate to <your local repository>/src/templates  
-### ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json  
+1. In your local repository, navigtate to <your local repository>/src/templates  
+2. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json  
   **Note**: This may take several seconds to run    
 
 ## 6. Create action to deploy  
 1. Navigate to actions tab  
 2. Select create new workflow  
 3. Select set up workflow yourself  
-  ![](images\set up workflow.png)
+  ![](images/set up workflow.png)
 4. Rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
 
  
