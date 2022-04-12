@@ -134,7 +134,7 @@ Fork https://github.com/jameshoff-msft/easyButton to your github account. For ba
 ### i. Open a command window  
 ### ii. Clone your repo locally  
 ### iii. Navigate to  
-Update the three "value" fields:  
+Update the three "value" fields below:  
 
 ![](images/edit_parameters1.png)  
 
@@ -148,15 +148,15 @@ Update the three "value" fields:
   **Note**: This may take several minutes  
   
 ## 5. Run initial deployment configuration  
-### i. Open local command line window  
-### ii. Navigtate to <your local repository>/src/templates  
-### iii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json  
+### i. In your local repository, navigtate to <your local repository>/src/templates  
+### ii. Run az deployment group create --name ExampleDeployment --resource-group easybutton --template-file main.json --parameters parameters.json  
   **Note**: This may take several seconds to run    
 
 ## 6. Create action to deploy  
 ### i. Navigate to actions tab  
 ### ii. Select create new workflow  
 ### iii. Select set up workflow yourself  
+  ![](images\set up workflow.png)
 ### iv. rename your the main.yml file (e.g. try "mainnew.yml") and select committ new file  
 
  
