@@ -106,14 +106,11 @@ Select your preferred Region
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
 It will take a few seconds for your Resource Group to be created.
-![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-create-group.png)
+![](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/media/manage-resource-groups-portal/manage-resource-groups-create-group.png)  
 For more help, refer to https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
 ## 2. Fork the repo
-Fork https://github.com/jameshoff-msft/easyButton to your github account  
-
-insert guidance and image here to fork
-
+Fork https://github.com/jameshoff-msft/easyButton to your github account. For basic instructions please refer to https://docs.microsoft.com/en-us/azure/devops/repos/git/forks?view=azure-devops&tabs=visual-studio  
 **Note**: *a Microsoft organization github account is **not** required*  
 
 ## 3. Create AND save personal access token
@@ -125,7 +122,7 @@ insert guidance and image here to fork
   v.   Select Generate personal access token  
   ![](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/select-new-token.png)
   vi.  Under Select scopes, select the checkbox for "workflow"
-  ![](iamges/personal_access_tokens_configuration.png_
+  ![](images/personal_access_tokens_configuration.png)
   vii. Add your own description  
   viii. Select Generate token  
   ix.  Copy your newly generated token  
